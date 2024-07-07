@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rebeccapurple;
+}
+
+nav{
+    font-size: 1rem;
+    padding: 1em;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdrown{
+    position: relative;
+}
+
+.dropdrown__list{
+    list-style: none;
+    position: absolute;
+    display: none;
+}
+
+.dropdrown__list li{
+    padding: 1em 0;
+}
+
+.dropdrown__list a{
+    color: black;
+    padding: 1em 0;
+}
+
+.dropdrown:hover .dropdrown__list{
+    display: block;
+}
